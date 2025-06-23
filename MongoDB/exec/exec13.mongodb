@@ -1,0 +1,4 @@
+// 13. Selecione um filme que foi dirigido por Billy Wilder, Ã© do gÃªnero de comÃ©dia, possui zero comentÃ¡rios e tem 9 indicaÃ§Ãµes Ã  premios.
+use('sample_mflix');
+
+db.movies.find({directors:{$in:["Billy Wilder"]}, genres:{$in:["Comedy"]},num_mflix_comments:0, "awards.nominations":9})

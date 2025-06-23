@@ -1,0 +1,15 @@
+1. Liste todos os usuÃ¡rios
+2. Liste todos os comentÃ¡rios feitos por "Doreah"
+3. Liste os nomes dos filmes com ano de lanÃ§amento maior do que 2010
+4. Selecione o titulo e o ano de todos os filmes onde o ator Hugh Jackman atuou
+5. Selecione o tÃ­tulo e os premios dos filmes que possuem uma nota maior que 6 no imdb e que tenham vencido pelo menos um prÃªmio
+6. Selecione o tipo, o tÃ­tulo e o ano de todas as entradas que nÃ£o sÃ£o do tipo "movie" e cujo ano Ã© maior que 1980
+7. Atualize o nome do usuÃ¡rio Jon Snow para JoÃ£o das Neves.
+8. Delete todos os comentÃ¡rios feitos pela Osha
+9. Atualize o plot e o full plot do filme Titanic com o Leonardo DiCaprio e a Kate Winslet
+10. Delete todos os filmes chamados Titanic que nÃ£o sÃ£o o filme com o Leonardo DiCaprio e a Kate Winslet
+11. Insira um novo usuÃ¡rio na coleÃ§Ã£o users
+12. Selecione o comentÃ¡rio mais antigo da coleÃ§Ã£o de comentÃ¡rios
+13. Selecione um filme que foi dirigido por Billy Wilder, Ã© do gÃªnero de comÃ©dia, possui zero comentÃ¡rios e tem 9 indicaÃ§Ãµes Ã  premios.
+14. Selecione o filme em que o ator Adam Sandler atuou que tem o maior nÃºmero de comentÃ¡rios
+15. Selecione o tÃ­tulo, runtime, lista de diretores e ano dos 10 filmes mais longos do banco

@@ -1,0 +1,4 @@
+// 4. Selecione o titulo e o ano de todos os filmes onde o ator Hugh Jackman atuou
+use('sample_mflix');
+
+db.movies.find({cast:{$in: ["Hugh Jackman"]}},{title:true, year:true, _id:false })

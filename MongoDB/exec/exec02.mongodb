@@ -1,0 +1,4 @@
+// 2. Liste todos os comentÃ¡rios feitos por "Doreah"
+use('sample_mflix');
+
+db.comments.find({name:"Doreah"},{_id:false,name:true, text:true})

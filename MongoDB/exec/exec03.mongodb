@@ -1,0 +1,4 @@
+// 3. Liste os nomes dos filmes com ano de lanÃ§amento maior do que 2010
+use('sample_mflix');
+
+db.movies.find({year:{$gt:2010}},{title:true, _id:false})

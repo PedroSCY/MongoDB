@@ -1,0 +1,7 @@
+// 11. Insira um novo usuÃ¡rio na coleÃ§Ã£o users
+use('sample_mflix');
+
+// db.users.insertOne({name: "Pedro lucas", email:"pedro@mail.com", password:"iohionaiohweojbsdfipjeonsdfopjweiohuihasdohqwd0ij"})
+
+db.users.find({name:"Pedro lucas"})
+

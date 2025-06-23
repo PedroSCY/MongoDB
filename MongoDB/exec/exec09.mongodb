@@ -1,0 +1,7 @@
+// 9. Atualize o plot e o full plot do filme Titanic com o Leonardo DiCaprio e a Kate Winslet
+use('sample_mflix');
+
+
+db.movies.find({title:"Titanic", cast:{$in:["Leonardo DiCaprio", "Kate Winslet"]}},{_id:false,title:true, year:true, cast:true, plot:true, fullplot:true})
+
+// db.movies.updateOne({title:"Titanic", cast:{$all:["Leonardo DiCaprio", "Kate Winslet"]}},{$set:{ plot:"Plot Atualizado", fullplot: "FullPlot Atualizado"}})

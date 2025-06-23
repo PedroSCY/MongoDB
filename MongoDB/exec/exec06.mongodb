@@ -1,0 +1,4 @@
+// 6. Selecione o tipo, o tÃ­tulo e o ano de todas as entradas que nÃ£o sÃ£o do tipo "movie" e cujo ano Ã© maior que 1980
+use('sample_mflix');
+
+db.movies.find({type:{$ne:"movie"},year:{$gte:1980}},{title:true,type:true, year:true,_id:false })

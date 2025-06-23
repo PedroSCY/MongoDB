@@ -1,0 +1,4 @@
+// 15. Selecione o tÃ­tulo, runtime, lista de diretores e ano dos 10 filmes mais longos do banco
+use('sample_mflix');
+
+db.movies.find({type:"movie"} , {_id:false, title:true, runtime:true, directors:true, year:true}).sort({runtime: -1}).limit(10)

@@ -1,0 +1,6 @@
+// 8. Delete todos os comentÃ¡rios feitos pela Osha
+use('sample_mflix');
+
+// db.comments.find({name:"Osha"},{})
+// db.comments.deleteMany({name:"Osha"})
+db.comments.find({},{})

@@ -1,0 +1,5 @@
+// 1. Liste todos os usuarios
+
+use('sample_mflix');
+
+db.users.find()

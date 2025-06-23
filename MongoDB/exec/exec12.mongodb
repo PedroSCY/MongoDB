@@ -1,0 +1,4 @@
+// 12. Selecione o comentÃ¡rio mais antigo da coleÃ§Ã£o de comentÃ¡rios
+use('sample_mflix');
+
+db.comments.find({},{}).sort({date: 1}).limit(1)

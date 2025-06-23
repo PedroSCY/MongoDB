@@ -1,0 +1,9 @@
+// 10. Delete todos os filmes chamados Titanic que nÃ£o sÃ£o o filme com o Leonardo DiCaprio e a Kate Winslet
+use('sample_mflix');
+
+// db.movies.deleteOne({title:"Titanic", cast:{$nin:["Leonardo DiCaprio", "Kate Winslet"]}},{$set:{ plot:"Plot Atualizado", fullplot: "FullPlot Atualizado"}})
+
+// db.movies.countDocuments({title:"Titanic"},{})
+db.movies.find({title:"Titanic", cast:{$nin:["Leonardo DiCaprio", "Kate Winslet"]}},{})
+
+

@@ -1,0 +1,10 @@
+// 7. Atualize o nome do usuÃ¡rio Jon Snow para JoÃ£o das Neves.
+use('sample_mflix');
+
+db.users.updateOne({name:"Jon Snow"},{$set:{name:"João das Neves"}})
+
+use('sample_mflix');
+db.users.find({name:"Jon Snow"})
+
+use('sample_mflix');
+db.users.find({name:"João das Neves"})

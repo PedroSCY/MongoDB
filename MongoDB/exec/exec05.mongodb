@@ -1,0 +1,4 @@
+// 5. Selecione o tÃ­tulo e os premios dos filmes que possuem uma nota maior que 6 no imdb e que tenham vencido pelo menos um prÃªmio
+use('sample_mflix');
+
+db.movies.find({"imdb.rating":{$gt:6}, "awards.wins":{$exists:1,$gte:1}},{title:true, awards:true, _id:false })

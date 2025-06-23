@@ -1,0 +1,4 @@
+// 14. Selecione o filme em que o ator Adam Sandler atuou que tem o maior nÃºmero de comentÃ¡rios
+use('sample_mflix');
+
+db.movies.find({cast:{$in:["Adam Sandler"]}},{}).sort({num_mflix_comments: -1}).limit(1)
