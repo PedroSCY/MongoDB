@@ -94,17 +94,6 @@ Material de apoio com foco prático para uso no `mongosh`.
 
 ---
 
-## 🔵 Métodos de Cursor (find)
-
-| Método       | Descrição                 | Exemplo                                              |
-| ------------ | ------------------------- | ---------------------------------------------------- |
-| `.limit(n)`  | Limita resultados         | `db.usuarios.find().limit(10)`                       |
-| `.skip(n)`   | Pula resultados           | `db.usuarios.find().skip(20)`                        |
-| `.sort()`    | Ordena                    | `db.usuarios.find().sort({ idade: -1 })`             |
-| `.forEach()` | Itera sobre os resultados | `db.usuarios.find().forEach(doc => print(doc.nome))` |
-
----
-
 ## 🔵 Operadores e Técnicas para Arrays (expansão)
 
 | Operador / Sintaxe               | Descrição                                                              | Exemplo                                                      |
@@ -126,6 +115,17 @@ Material de apoio com foco prático para uso no `mongosh`.
 | `$all`                           | Verifica se array contém **todos os itens**                            | `{ hobbies: { $all: ["futebol", "natação"] } }`              |
 | `$size`                          | Verifica o **tamanho exato** do array                                  | `{ hobbies: { $size: 3 } }`                                  |
 | `$min`, `$max` (update)          | Atualiza campo **apenas se novo valor for menor/maior**                | `{ $min: { notas.0: 6 } }` <br> `{ $max: { notas.1: 9 } }`   |
+
+---
+
+## 🔵 Métodos de Cursor (find)
+
+| Método       | Descrição                 | Exemplo                                              |
+| ------------ | ------------------------- | ---------------------------------------------------- |
+| `.limit(n)`  | Limita resultados         | `db.usuarios.find().limit(10)`                       |
+| `.skip(n)`   | Pula resultados           | `db.usuarios.find().skip(20)`                        |
+| `.sort()`    | Ordena                    | `db.usuarios.find().sort({ idade: -1 })`             |
+| `.forEach()` | Itera sobre os resultados | `db.usuarios.find().forEach(doc => print(doc.nome))` |
 
 ---
 
